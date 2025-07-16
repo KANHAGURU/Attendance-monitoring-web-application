@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }} 👋</h2>
+    {% if success %}<p style="color:green;">{{ success }}</p>{% endif %}
+    <form method="POST" action="/mark_attendance">
+        <button type="submit">Mark Attendance</button>
+    </form>
+    <br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
